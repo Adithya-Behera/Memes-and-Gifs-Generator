@@ -1,0 +1,235 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Adithya Behera} \\ \vspace{1pt}
+    \small +91-8209902223 $|$ \href{mailto:x@x.com}{\underline{adityabeherda@gmail.com}} $|$ 
+    \href{https://www.linkedin.com/in/adithya-behera-28886823b/}{\underline{linkedin}} $|$
+    \href{https://github.com/Adithya-Behera}{\underline{github}} $|$
+    {\href{https://leetcode.com/u/Adithya_820/}{\underline{leetcode}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Indian Institute of Engineering Science and Technology, Shibpur}{Nov 2021 -- May 2025}
+      {Bachelor of Technology in Information Technology}{CGPA: 8.9}
+    \resumeSubheading
+      {Navjeevan Academy Sr. Sec. School}{Jun 2018 -- May 2020}
+      {Board of Secondary Education, Rajasthan}{Percentage: 80.6 }
+    \resumeSubheading
+      {Carmel Convent School}{ March 2018}
+      {Indian Certificate of Secondary Education, Karnataka}{Percentage: 96.8 }
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+
+    \resumeSubheading
+      {Research Intern in Federated Learning}{May 2024 -- July 2024}
+      {National Institute of Technology Karnataka (NITK), Surathkal}{Mangalore, Karnataka}
+      \resumeItemListStart
+        \resumeItem{Developed a comprehensive federated learning setup for virtual machine trace CPU utilization using an attention-based GRU model.}
+        \resumeItem{Implemented the setup on Google Cloud Platform (GCP) compute engine with one master and three worker VMs, each utilizing different datasets.}
+        \resumeItem{Configured and managed GCP instances to enhance federated learning performance.}
+        \resumeItem{Conducted extensive testing and performance analysis to validate the setup's efficiency.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+    {Full-Stack Developer}{Feb 2024 -- Apr 2024}
+    {NullClass}{Chennai, Tamil Nadu}
+    \resumeItemListStart
+        \resumeItem{Developed a platform to facilitate peer-to-peer knowledge sharing within the programming community.}
+        \resumeItem{Integrated an AI chatbot using Botpress to provide real-time assistance and solutions for programming-related queries.}
+        \resumeItem{Leveraged the MERN stack (MongoDB, Express.js, React.js, Node.js) to ensure seamless integration and robust performance of the platform.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+% %-----------PROJECTS-----------
+%  \section{Projects}
+%     \resumeSubHeadingListStart
+%     \resumeProjectHeading
+%         {\textbf{An Ed-Tech Platform} $|$ \emph{React.js, Node.js, Express.js, MongoDB, TailwindCSS}}{Jan 2024 -- May 2024}
+%         \resumeItemListStart
+%             \resumeItem{Engineered a MERN application for educational content creation, consumption, and rating.}
+%             \resumeItem{Implemented JWT-based user authentication and authorization for enhanced security.}
+%             \resumeItem{Designed and deployed RESTful APIs with Node.js and Express.js for seamless CRUD operations.}
+%             \resumeItem{Leveraged MongoDB for scalable data storage of user profiles and educational content.}
+%         \resumeItemListEnd
+% \resumeSubHeadingListStart
+%     \resumeProjectHeading
+%         {\textbf{Steel Plate Defect Prediction} $|$ \emph{Python, NumPy, Pandas, Scikit-learn, Flask}}{Jan 2024 -- May 2024}
+%         \resumeItemListStart
+%             \resumeItem{Developed a robust ensemble model using a voting classifier, integrating multiple machine learning algorithms including XGBoost, LightGBM, CatBoost, and Histogram-based Gradient Boosting Classifier (HGBC) to enhance predictive accuracy.}
+%             \resumeItem{Employed advanced hyperparameter tuning techniques to optimize the weights of individual classifiers within the ensemble model, resulting in superior performance.}
+%             \resumeItem{Evaluated the model's performance using rigorous cross-validation techniques such as Stratified K-Fold, ensuring robustness and generalizability.}
+%             \resumeItem{Achieved a high mean cross-validation ROC AUC score of 0.868, indicating strong overall performance in classifying defects in steel plates.}
+%         \resumeItemListEnd
+% \resumeSubHeadingListEnd
+
+
+
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+    \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+    \textbf{Languages}{: C/C++, JavaScript, Python, SQL, HTML/CSS} \\
+    \textbf{Frameworks}{: React.js, Node.js, Express.js, Material-UI, Tailwind CSS, Flower} \\
+    \textbf{Libraries}{: Redux Toolkit, Mongoose, NumPy, pandas, scikit-learn} \\
+    \textbf{Databases}{: MySQL, MongoDB} \\
+    \textbf{Other}{: Machine Learning, Federated Learning}
+    }}
+    \end{itemize}
+    
+    \section{Projects}
+    \resumeSubHeadingListStart
+    \resumeProjectHeading
+    {\href{https://github.com/Adithya-Behera/EdTech-Plateform-Backend}{[Link]} \textbf{An Ed-Tech Platform} $|$ \emph{React.js, Node.js, Express.js, MongoDB, TailwindCSS}}{Jan 2024 -- May 2024}
+    \resumeItemListStart
+    \resumeItem{Engineered a MERN application for educational content creation, consumption, and rating.}
+    \resumeItem{Implemented JWT-based user authentication and authorization for enhanced security.}
+    \resumeItem{Designed and deployed RESTful APIs with Node.js and Express.js for seamless CRUD operations.}
+    \resumeItem{Leveraged MongoDB for scalable data storage of user profiles and used Cloudinary for media storage.}
+    \resumeItemListEnd
+    \resumeProjectHeading
+    {\href{https://steel-plate-defect-prediction.onrender.com/}{[Link]} \textbf{Steel Plate Defect Prediction} $|$ \emph{Python, NumPy, Pandas, Scikit-learn, Flask}}{Mar 2024 -- Apr 2024}
+    \resumeItemListStart
+    \resumeItem{Built an ensemble model using a voting classifier with XGBoost, LightGBM, CatBoost, and HGBC.}
+    \resumeItem{Optimized classifier weights with hyperparameter tuning for better performance.}
+    \resumeItem{Used Stratified K-Fold cross-validation for robust model evaluation.}
+    \resumeItem{Achieved a mean cross-validation ROC AUC score of 0.868, indicating good discriminatory ability.}
+    \resumeItemListEnd
+    \resumeProjectHeading
+    {\href{https://668437235d2cf6bec395dc65--memesandgifs.netlify.app/}{[Link]} \textbf{Memes and GIFs Generator} $|$ \emph{React, Graphy API, Rapid Meme API, Material UI}}{Dec 2023}
+    \resumeItemListStart
+    \resumeItem{Developed a web application for generating memes and GIFs using Graphy API and Rapid Meme API.}
+    \resumeItem{Integrated Material UI for an enhanced user experience on both mobile and desktop devices.}
+    \resumeItem{Implemented responsive design to ensure seamless functionality across different screen sizes.}
+    \resumeItem{Enabled easy generation and downloading of  content for users.}
+    \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+
+
+
+%-------------------------------------------
+\end{document}

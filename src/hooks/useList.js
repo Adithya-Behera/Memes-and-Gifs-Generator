@@ -2,25 +2,25 @@ import axios from "axios";
 import { useEffect } from "react";
 import { useState } from "react";
 
+const trending = import.meta.env.VITE_APP_LIST_URL;
 const headerKey = import.meta.env.VITE_APP_HEADER_KEY;
-const headerHost = import.meta.env.VITE_APP_HEADER_HOST1;
-const url='https://reddit-meme.p.rapidapi.com/memes';
+const headerHost = import.meta.env.VITE_APP_HEADER_HOST2;
 
-const useTrending = (tag) => {
-  const [memes, setMeme] = useState([]);
+const useList = () => {
+  const [options, setOptions] = useState([]);
   const [loading, setLoading] = useState(false);
 
-  async function getTrending() {
+  async function getNames() {
     setLoading(true);
     try {
-      const result= await axios.get(tag ? `${url}/trending` :`${url}/top`,{
+      const result= await axios.get(trending,{
           headers: {
           'x-rapidapi-key':headerKey,
           'x-rapidapi-host':headerHost
           }
       });
-      setMeme(result.data||[]);
-      console.log('hello',result.data)
+      setOptions(result.data||[]);
+    //   console.log('hello',result.data)
       setLoading(false);
     } catch (error) {
       console.log(error);
@@ -28,10 +28,10 @@ const useTrending = (tag) => {
   }
 
   useEffect(() => {
-    getTrending();
+    getNames();
   }, []);
 
-  return { memes, loading, getTrending };
+  return { options, loading, getNames };
 };
 
-export default useTrending;
+export default useList;

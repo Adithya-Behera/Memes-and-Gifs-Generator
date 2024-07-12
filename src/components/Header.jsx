@@ -28,7 +28,7 @@ import './Header.css'
 const drawerWidth = 240
 
 const navItems = [
-  { link: '/', label: 'Meme of the Day' },
+  { link: '/memeOfTheDay', label: 'Meme of the Day' },
   { link: '/gifs', label: 'Generate Gifs' },
 ]
 
@@ -50,8 +50,8 @@ const Header = () => {
 
   const pageName = () => {
     switch (location.pathname) {
-      case '/':
-        return 'Rapid Memes'
+      case '/memeOfTheDay':
+        return 'Meme of the Day'
       case '/gifs':
         return 'Generate Gifs'
       case '/create':

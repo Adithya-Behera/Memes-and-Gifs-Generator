@@ -7,6 +7,7 @@ import Home from './components/Home'
 import Creator from './components/Creator'
 import App from './App'
 import ErrorPage from './components/ErrorPage'
+import Day from './components/Day'
 import { createTheme, responsiveFontSizes, ThemeProvider } from '@mui/material'
 import { green,indigo,orange, pink } from '@mui/material/colors'
 
@@ -38,6 +39,10 @@ const router = createBrowserRouter([
           {
             path: '/gifs',
             element: <Gif />,
+          },
+          {
+            path: '/memeOfTheDay',
+            element: <Day />,
           }
         ],
       },
