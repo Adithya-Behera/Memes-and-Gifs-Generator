@@ -28,8 +28,8 @@ import './Header.css'
 const drawerWidth = 240
 
 const navItems = [
-  { link: '/memeOfTheDay', label: 'Meme of the Day' },
   { link: '/gifs', label: 'Generate Gifs' },
+  { link: '/create', label: 'Create Memes' },
 ]
 
 const ColorButton = styled(Button)(({ theme }) => ({
@@ -50,8 +50,6 @@ const Header = () => {
 
   const pageName = () => {
     switch (location.pathname) {
-      case '/memeOfTheDay':
-        return 'Meme of the Day'
       case '/gifs':
         return 'Generate Gifs'
       case '/create':
@@ -135,17 +133,16 @@ const Header = () => {
             </Box>
 
             <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
-              {navItems.map((item) => (
                 <NavLink
                   end
-                  to={item.link}
-                  key={item.label}
+                  to="/gifs"
+                  key="Generate Gifs"
                   style={{ textDecoration: 'none' }}
                   className={({ isActive }) => (isActive ? 'link-active' : '')}
                 >
-                  <ColorButton>{item.label}</ColorButton>
+                  <ColorButton>Generate Gifs</ColorButton>
                 </NavLink>
-              ))}
+              
               <NavLink end to="/create" style={{ textDecoration: 'none' }}>
                 <Button
                   disableElevation

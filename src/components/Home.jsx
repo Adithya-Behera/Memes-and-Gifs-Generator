@@ -29,7 +29,7 @@ const Home = (props) => {
   return (
     <>
       <HeroText text="Discover the best memes" />
-      <Container
+      {/* <Container
         maxWidth="md"
         sx={{
           mt: 8,
@@ -60,7 +60,7 @@ const Home = (props) => {
                 )}
           </Swiper>
         )}
-      </Container>
+      </Container> */}
       <Box sx={{ mt: 8 }}>
         <MemeSelector onSelect={(meme) => memeSelected(meme)} />
       </Box>
